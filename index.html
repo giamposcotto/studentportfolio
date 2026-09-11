@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gian Pio Scotto di Mase · Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome per icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <header class="site-header">
+            <div class="header-left">
+                <img src="assets/img/profile.png" alt="Gian Pio Scotto di Mase" class="profile-img" />
+                <div class="header-text">
+                    <h1 class="site-title">Gian Pio Scotto di Mase</h1>
+                    <p class="site-subtitle">Structural Engineer · Software Developer</p>
+                </div>
+            </div>
+            <div class="header-controls">
+                <button id="lang-toggle" class="lang-btn">
+                    <i class="fas fa-globe"></i> Italiano
+                </button>
+                <button id="theme-toggle" class="theme-btn" title="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- CONTENUTO INGLESE (VISIBILE DI DEFAULT) -->
+        <div id="content-en" style="display:block;">
+
+            <!-- INTRO EN -->
+            <section class="intro">
+                <div class="intro-text">
+                    <p>
+                        <i class="fas fa-user-graduate" style="color:#2c3e50; margin-right:8px;"></i>
+                        Graduated in Civil and Structural Engineering from the University "Federico II" of Naples. I developed several technical software tools during my university years, now available for professionals and students. In addition, my university notes covering the main subjects of the degree programme are available for free.
+                    </p>
+                    <p>
+                        <i class="fas fa-code" style="color:#2c3e50; margin-right:8px;"></i>
+                        Below you will find the descriptions of my applications, developed in Python and Matlab, which can be downloaded from my GitHub profile.
+                    </p>
+                </div>
+            </section>
+            <div class="app-grid">
+                <!-- MOFI -->
+                <div class="app-card" data-app="mofi">
+                    <div class="app-card-img" style="background-image: url('assets/img/mofi/MofiLogo.png');"></div>
+                    <div class="app-card-body">
+                        <h2 class="app-title">Mofi</h2>
+                        <span class="app-badge python">Python</span>
+                        <p class="app-card-short">Moment‑curvature diagrams using the Fiber Method. Cracking, yielding, and chord rotation.</p>
+                    </div>
+                </div>
+
+                <!-- LISA -->
+                <div class="app-card" data-app="lisa">
+                    <div class="app-card-img" style="background-image: url('assets/img/lisa/LisaLogo.png');"></div>
+                    <div class="app-card-body">
+                        <h2 class="app-title">LiSa</h2>
+                        <span class="app-badge python">Python</span>
+                        <p class="app-card-short">Influence lines for multi‑ribbed open sections. Engesser theory, export to Excel/AutoCAD.</p>
+                    </div>
+                </div>
+
+                <!-- PALIB -->
+                <div class="app-card" data-app="palib">
+                    <div class="app-card-img" style="background-image: url('assets/img/palib/PaLibLogo.png');"></div>
+                    <div class="app-card-body">
+                        <h2 class="app-title">PaLib</h2>
+                        <span class="app-badge python">Python</span>
+                        <p class="app-card-short">Embedment depth for free sheet pile walls with soil‑water interaction.</p>
+                    </div>
+                </div>
+
+                <!-- PAVIN -->
+                <div class="app-card" data-app="pavin">
+                    <div class="app-card-img" style="background-image: url('assets/img/pavin/PaVinLogo.png');"></div>
+                    <div class="app-card-body">
+                        <h2 class="app-title">PaVin</h2>
+                        <span class="app-badge python">Python</span>
+                        <p class="app-card-short">Restrained sheet pile wall: embedment depth and interaction diagrams.</p>
+                    </div>
+                </div>
+
+                <!-- TEVI -->
+                <div class="app-card" data-app="tevi">
+                    <div class="app-card-img" style="background-image: url('assets/img/tevi/TeViLogo.png');"></div>
+                    <div class="app-card-body">
+                        <h2 class="app-title">TeVi</h2>
+                        <span class="app-badge python">Python</span>
+                        <p class="app-card-short">Modal analysis of two‑storey Grinter frames: periods, mode shapes, participating masses.</p>
+                    </div>
+                </div>
+
+                <!-- BARROS -->
+                <div class="app-card" data-app="barros">
+                    <div class="app-card-img" style="background-image: url('assets/img/barros/BarrosLogo.png');"></div>
+                    <div class="app-card-body">
+                        <h2 class="app-title">Barros</h2>
+                        <span class="app-badge python">Python</span>
+                        <p class="app-card-short">Barros theory for embankments: earth pressure on walls and drainage flow.</p>
+                    </div>
+                </div>
+
+                <!-- ANALISI SEGNALI SISMICI -->
+                <div class="app-card" data-app="sismici">
+                    <div class="app-card-img" style="background-image: url('assets/img/ass/AnalisiSegnaliSismiciLogo.png');"></div>
+                    <div class="app-card-body">
+                        <h2 class="app-title">Seismic signal analysis</h2>
+                        <span class="app-badge matlab">Matlab</span>
+                        <p class="app-card-short">Download from Itaca, PGA/PGV/PGD calculation, Arias Intensity, and Husid Plot.</p>
+                    </div>
+                </div>
+
+                <!-- ANALISI PERICOLOSITÀ -->
+                <div class="app-card" data-app="pericolosita">
+                    <div class="app-card-img" style="background-image: url('assets/img/ap/AnalisiPericolosità.png');"></div>
+                    <div class="app-card-body">
+                        <h2 class="app-title">Hazard analysis</h2>
+                        <span class="app-badge matlab">Matlab</span>
+                        <p class="app-card-short">Hazard curves and disaggregation for a linear source. Gutenberg‑Richter law.</p>
+                    </div>
+                </div>
+
+                <!-- SPETTRI DI RISPOSTA -->
+                <div class="app-card" data-app="spettri">
+                    <div class="app-card-img" style="background-image: url('assets/img/rs/RSLOGO.png');"></div>
+                    <div class="app-card-body">
+                        <h2 class="app-title">Response spectra</h2>
+                        <span class="app-badge matlab">Matlab</span>
+                        <p class="app-card-short">Response and pseudo‑spectra from accelerometric signals. Newmark method.</p>
+                    </div>
+                </div>
+
+                <!-- VERIFICA NODI -->
+                <div class="app-card" data-app="nodi">
+                    <div class="app-card-img" style="background-image: url('assets/img/nodi/VerificaNodiLogo.png');"></div>
+                    <div class="app-card-body">
+                        <h2 class="app-title">Joint & stirrups design</h2>
+                        <span class="app-badge matlab">Matlab</span>
+                        <p class="app-card-short">Shear‑tension/compression verification in joints, stirrup design according to EC8.</p>
+                    </div>
+                </div>
+
+                <!-- SPETTRO PERICOLOSITÀ UNIFORME -->
+                <div class="app-card" data-app="uhs">
+                    <div class="app-card-img" style="background-image: url('assets/img/spu/SpettroAPULogo.png');"></div>
+                    <div class="app-card-body">
+                        <h2 class="app-title">Uniform hazard spectrum</h2>
+                        <span class="app-badge matlab">Matlab</span>
+                        <p class="app-card-short">UHS and disaggregation using 5 attenuation laws. Definable return period.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NOTE INSTALLAZIONE (EN) -->
+            <div class="notes">
+                <h2><i class="fas fa-download"></i> Installation notes</h2>
+                <p><strong>Python:</strong> Lightweight setup – no Python installation required.</p>
+                <p><strong>Matlab:</strong> Available as Standalone (with Runtime) or Runtime‑included versions.</p>
+                <p>We recommend the <strong>Runtime‑included</strong> version for faster subsequent installations.</p>
+            </div>
+
+            <!-- DOWNLOAD (EN) -->
+            <div class="notes notes-download">
+                <h2><i class="fas fa-cloud-download-alt"></i> Download</h2>
+                <p>
+                    All applications and university notes are available on my GitHub profile:
+                </p>
+                <p>
+                    <i class="fab fa-github" style="color:#1a2a3a; width:24px;"></i>
+                    <a href="https://github.com/giamposcotto" target="_blank" style="color:#1a2a3a; text-decoration:underline; font-weight:600;">
+                        github.com/giamposcotto
+                    </a>
+                </p>
+                <p>
+                    <i class="fas fa-circle-exclamation" style="color:#1a2a3a; width:24px;"></i>
+                    <strong>Problems?</strong> Contact me at:
+                    <a href="mailto:gianpioscotto@outlook.it" style="color:#1a2a3a; text-decoration:underline; font-weight:600;">
+                        gianpioscotto@outlook.it
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+        <!-- CONTENUTO ITALIANO (NASCOSTO DI DEFAULT) -->
+        <div id="content-it" style="display:none;">
+
+            <!-- INTRO IT -->
+            <section class="intro">
+                <div class="intro-text">
+                    <p>
+                        <i class="fas fa-user-graduate" style="color:#2c3e50; margin-right:8px;"></i>
+                        Laureato in Ingegneria Civile e Strutturale presso l'Università "Federico II" di Napoli.
+                        Durante gli anni universitari ho sviluppato diversi strumenti software tecnici, ora disponibili per professionisti e studenti.
+                        Inoltre, i miei appunti universitari delle principali materie del corso di laurea sono disponibili gratuitamente.
+                    </p>
+                    <p>
+                        <i class="fas fa-code" style="color:#2c3e50; margin-right:8px;"></i>
+                        Di seguito trovi le descrizioni delle mie applicazioni, sviluppate in Python e Matlab, scaricabili dal mio profilo GitHub.
+                    </p>
+                </div>
+            </section>
+
+            <div class="app-grid">
+                <!-- MOFI -->
+                <div class="app-card" data-app="mofi">
+                    <div class="app-card-img" style="background-image: url('assets/img/mofi/MofiLogo.png');"></div>
+                    <div class="app-card-body">
+                        <h2 class="app-title">Mofi</h2>
+                        <span class="app-badge python">Python</span>
+                        <p class="app-card-short">Diagramma momento‑curvatura con Metodo a Fibre. Calcolo di fessurazione e snervamento.</p>
+                    </div>
+                </div>
+
+                <!-- LISA -->
+                <div class="app-card" data-app="lisa">
+                    <div class="app-card-img" style="background-image: url('assets/img/lisa/LisaLogo.png');"></div>
+                    <div class="app-card-body">
+                        <h2 class="app-title">LiSa</h2>
+                        <span class="app-badge python">Python</span>
+                        <p class="app-card-short">Linee di influenza per sezioni aperte a più nervature. Teoria di Engesser.</p>
+                    </div>
+                </div>
+
+                <!-- PALIB -->
+                <div class="app-card" data-app="palib">
+                    <div class="app-card-img" style="background-image: url('assets/img/palib/PaLibLogo.png');"></div>
+                    <div class="app-card-body">
+                        <h2 class="app-title">PaLib</h2>
+                        <span class="app-badge python">Python</span>
+                        <p class="app-card-short">Profondità di infissione per paratia libera con interazione terreno‑falda.</p>
+                    </div>
+                </div>
+
+                <!-- PAVIN -->
+                <div class="app-card" data-app="pavin">
+                    <div class="app-card-img" style="background-image: url('assets/img/pavin/PaVinLogo.png');"></div>
+                    <div class="app-card-body">
+                        <h2 class="app-title">PaVin</h2>
+                        <span class="app-badge python">Python</span>
+                        <p class="app-card-short">Paratia vincolata in testa: calcolo infissione e diagrammi di interazione.</p>
+                    </div>
+                </div>
+
+                <!-- TEVI -->
+                <div class="app-card" data-app="tevi">
+                    <div class="app-card-img" style="background-image: url('assets/img/tevi/TeViLogo.png');"></div>
+                    <div class="app-card-body">
+                        <h2 class="app-title">TeVi</h2>
+                        <span class="app-badge python">Python</span>
+                        <p class="app-card-short">Analisi modale di telai Grinter a due piani: periodi e forme modali.</p>
+                    </div>
+                </div>
+
+                <!-- BARROS -->
+                <div class="app-card" data-app="barros">
+                    <div class="app-card-img" style="background-image: url('assets/img/barros/BarrosLogo.png');"></div>
+                    <div class="app-card-body">
+                        <h2 class="app-title">Barros</h2>
+                        <span class="app-badge python">Python</span>
+                        <p class="app-card-short">Teoria di Barros per terrapieni: spinta sul muro e portata di drenaggio.</p>
+                    </div>
+                </div>
+
+                <!-- ANALISI SEGNALI SISMICI -->
+                <div class="app-card" data-app="sismici">
+                    <div class="app-card-img" style="background-image: url('assets/img/ass/AnalisiSegnaliSismiciLogo.png');"></div>
+                    <div class="app-card-body">
+                        <h2 class="app-title">Analisi segnali sismici</h2>
+                        <span class="app-badge matlab">Matlab</span>
+                        <p class="app-card-short">Download da Itaca, calcolo PGA/PGV/PGD, Intensità di Arias e Husid Plot.</p>
+                    </div>
+                </div>
+
+                <!-- ANALISI PERICOLOSITÀ -->
+                <div class="app-card" data-app="pericolosita">
+                    <div class="app-card-img" style="background-image: url('assets/img/ap/AnalisiPericolosità.png');"></div>
+                    <div class="app-card-body">
+                        <h2 class="app-title">Analisi Pericolosità</h2>
+                        <span class="app-badge matlab">Matlab</span>
+                        <p class="app-card-short">Curve di pericolosità e disaggregazione per sorgente lineare.</p>
+                    </div>
+                </div>
+
+                <!-- SPETTRI DI RISPOSTA -->
+                <div class="app-card" data-app="spettri">
+                    <div class="app-card-img" style="background-image: url('assets/img/rs/RSLOGO.png');"></div>
+                    <div class="app-card-body">
+                        <h2 class="app-title">Spettri di risposta</h2>
+                        <span class="app-badge matlab">Matlab</span>
+                        <p class="app-card-short">Spettri di risposta e pseudo‑spettri da segnali accelerometrici.</p>
+                    </div>
+                </div>
+
+                <!-- VERIFICA NODI -->
+                <div class="app-card" data-app="nodi">
+                    <div class="app-card-img" style="background-image: url('assets/img/nodi/VerificaNodiLogo.png');"></div>
+                    <div class="app-card-body">
+                        <h2 class="app-title">Verifica nodi e staffe</h2>
+                        <span class="app-badge matlab">Matlab</span>
+                        <p class="app-card-short">Verifica a taglio‑trazione/compressione nei nodi, calcolo staffe secondo EC8.</p>
+                    </div>
+                </div>
+
+                <!-- SPETTRO PERICOLOSITÀ UNIFORME -->
+                <div class="app-card" data-app="uhs">
+                    <div class="app-card-img" style="background-image: url('assets/img/spu/SpettroAPULogo.png');"></div>
+                    <div class="app-card-body">
+                        <h2 class="app-title">Spettro Pericolosità uniforme</h2>
+                        <span class="app-badge matlab">Matlab</span>
+                        <p class="app-card-short">Spettro UHS e disaggregazione per 5 leggi di attenuazione.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NOTE INSTALLAZIONE (IT) -->
+            <div class="notes">
+                <h2><i class="fas fa-download"></i> Note di installazione</h2>
+                <p><strong>Python:</strong> Setup unico leggero – non richiede Python installato.</p>
+                <p><strong>Matlab:</strong> Disponibile in versione Standalone (con Runtime) o con Runtime incluso.</p>
+                <p>Si consiglia la versione con <strong>Runtime incluso</strong> per velocizzare le installazioni successive.</p>
+            </div>
+
+            <!-- DOWNLOAD (IT) -->
+            <div class="notes notes-download">
+                <h2><i class="fas fa-cloud-download-alt"></i> Download</h2>
+                <p>
+                    Tutte le applicazioni e gli appunti sono disponibili sul mio profilo GitHub:
+                </p>
+                <p>
+                    <i class="fab fa-github" style="color:#1a2a3a; width:24px;"></i>
+                    <a href="https://github.com/giamposcotto" target="_blank" style="color:#1a2a3a; text-decoration:underline; font-weight:600;">
+                        github.com/giamposcotto
+                    </a>
+                </p>
+                <p>
+                    <i class="fas fa-circle-exclamation" style="color:#1a2a3a; width:24px;"></i>
+                    <strong>Problemi?</strong> Contattami a:
+                    <a href="mailto:gianpioscotto@outlook.it" style="color:#1a2a3a; text-decoration:underline; font-weight:600;">
+                        gianpioscotto@outlook.it
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+            <p>&copy; 2026 Gian Pio Scotto di Mase · All rights reserved</p>
+        </footer>
+
+    </div>
+
+    <!-- MODALE DETTAGLI CON GALLERIA -->
+    <div id="app-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modal-body">
+                <!-- Contenuto inserito da JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // ===== DARK MODE TOGGLE =====
+        const themeBtn = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        // Ripristina preferenza salvata
+        if (localStorage.getItem('theme') === 'dark') {
+            body.classList.add('dark');
+            themeBtn.innerHTML = '<i class="fas fa-sun"></i>';
+        }
+
+        themeBtn.addEventListener('click', () => {
+            body.classList.toggle('dark');
+            const isDark = body.classList.contains('dark');
+            themeBtn.innerHTML = isDark
+                ? '<i class="fas fa-sun"></i>'
+                : '<i class="fas fa-moon"></i>';
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        });
+    </script>
+</body>
+</html>
