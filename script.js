@@ -1,4 +1,4 @@
-﻿document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
 
     // ---- STATO LINGUA (default: inglese) ----
     let currentLang = 'en';
@@ -10,6 +10,7 @@
     const modal = document.getElementById('app-modal');
     const modalBody = document.getElementById('modal-body');
     const closeBtn = document.querySelector('.modal-close');
+    const subtitle = document.getElementById('site-subtitle');
 
     // ---- DATI BILINGUE DELLE APPLICAZIONI (DETTAGLI + GALLERIA) ----
     // ITALIANO E INGLESE USANO LE STESSE IMMAGINI (PERCORSI IDENTICI)
@@ -402,10 +403,12 @@
             contentEn.style.display = 'block';
             contentIt.style.display = 'none';
             btnLang.innerHTML = '<i class="fas fa-globe"></i> Italiano';
+            if (subtitle) subtitle.textContent = 'Structural Engineering Student';
         } else {
             contentEn.style.display = 'none';
             contentIt.style.display = 'block';
             btnLang.innerHTML = '<i class="fas fa-globe"></i> English';
+            if (subtitle) subtitle.textContent = 'Studente di Ingegneria Strutturale';
         }
     }
 
